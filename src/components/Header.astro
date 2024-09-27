@@ -51,8 +51,8 @@ const navItems = [
     const sections = document.querySelectorAll("section")
     const navItems = document.querySelectorAll("header nav a")
 
-    const callback = (entries) => {
-      entries.forEach((entry) => {
+    const callback = (entries: any[]) => {
+      entries.forEach((entry: { isIntersecting: any; target: { id: string | null } }) => {
         if (entry.isIntersecting) {
           navItems.forEach((item) => {
             if (item.getAttribute("aria-label") == entry.target.id) {
