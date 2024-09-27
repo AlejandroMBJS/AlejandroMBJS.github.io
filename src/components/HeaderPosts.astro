@@ -1,0 +1,58 @@
+---
+import ThemeToggle from "./ThemeToggle.astro"
+
+const navItems = [
+  {
+    title: "Post1",
+    label: "Post1",
+    url: "/",
+  },
+  {
+    title: "Post2",
+    label: "Post2",
+    url: "/",
+  },
+  {
+    title: "Post3", // Corrección de "Proyects" a "Projects"
+    label: "Post3",
+    url: "/",
+  },
+  {
+    title: "Post4",
+    label: "Post4",
+    url: "/",
+  },
+  {
+    title: "Post5",
+    label: "Post5",
+    url: "/",
+  },
+]
+---
+<header class="fixed top-40 left-0 z-10 flex flex-col w-60 h-4 text-white  position:relative">
+
+  <nav class="flex flex-col rounded-xl mr-6 ml-2 top-40 z-10  "> <!-- Añadido mt-16 para espaciar el contenido -->
+    {
+      navItems.map((link) => (
+        <a
+          class="relative block  py-3 transition duration-200 hover:bg-gray-700 hover:text-green-400 ml-2"
+          aria-label={link.label}
+          href={link.url}
+        >
+          {link.title}
+        </a>
+      ))
+    }
+    
+  </nav>
+
+
+<style>
+ 
+
+  nav {
+    @apply bg-gray-900;
+  }
+
+
+</style>

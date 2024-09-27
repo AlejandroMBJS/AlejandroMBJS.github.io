@@ -1,0 +1,52 @@
+---
+// experiencia.astro
+import Layout from "@/layouts/Layout.astro"
+import ExperienceItem from "@/components/ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Feb 2024 - July 2024",
+    title: "Infrastructure Engineer",
+    company: "XalDigital",
+    description:
+      "Led the design and deployment of secure, scalable microservices architecture using Golang. Managed AWS infrastructure, focusing on security, and implemented vulnerability assessments to safeguard cloud-based services."
+  },
+  {
+    date: "Feb 2023 - Oct 2023",
+    title: "Software Backend Engineer",
+    company: "HCL Tech",
+    description:
+      "Developed high-performance backend services and APIs in Golang. Conducted penetration testing and vulnerability assessments, managing distributed databases and ensuring the security and scalability of AWS cloud infrastructure.",
+  },
+  {
+    date: "March 2022 - Dec 2022",
+    title: "DevOps Associate",
+    company: "Justia",
+    description:
+      "Spearheaded secure CI/CD pipelines using AWS CodePipeline. Designed and managed cloud-native architectures, implementing Docker container deployments and security tuning strategies to enhance system resilience and efficiency.",
+  },
+  {
+    date: "Oct 2018 - Dec 2021",
+    title: "Process Automation, Backend and Cloud Developer",
+    company: "ADISA",
+    description:
+      "Developed secure backend services and APIs in Golang. Led automation and orchestration of containerized environments using Docker and Kubernetes, and implemented high-availability, secure cloud-native infrastructures on AWS.",
+  },
+];
+---
+
+<Layout
+  title="Experiencia laboral"
+  description="Mira mi experiencia laboral como desarrollador y creador de contenido."
+>
+  <main class="px-4 py-16 mt-10">
+    <h1 class="text-3xl font-bold mb-6">Work Experience</h1>
+    
+    <ol class="relative mt-16">
+      {EXPERIENCE.map((experience) => (
+        <li>
+          <ExperienceItem {...experience} />
+        </li>
+      ))}
+    </ol>
+  </main>
+</Layout>

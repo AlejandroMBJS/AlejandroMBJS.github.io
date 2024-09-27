@@ -1,39 +1,43 @@
 ---
- const personalImageAlt = "Miguel Ángel"
+import SectionContainer from "./SectionContainer.astro"
+
+ const personalImageAlt = "Alejandro Mejia"
 ---
+<SectionContainer>
+  
+  <header class="text-white">
+    <h1 class="text-4xl font-bold text-center py-8">Blog de Ciberseguridad</h1>
+  </header>
 
-<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
-  <div
-    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
-  >
-    <p>
-      Me llamo Miguel Ángel pero mis amigos me llaman midu. Empecé en la
-      programación con un Amstrad, tenía 10 años. Actualmente estoy <strong
-        >liderando equipos de desarrollo en multinacionales</strong
-      >.
-    </p>
-
-    <p>
-      Algunos de mis éxitos incluyen <strong
-        >colaborar con Mozilla para el desarrollo de las primeras apps en su
-        sistema FirefoxOS</strong
-      >. Aunque hoy está desaparecido fue un gran avance en el mundo del
-      desarrollo web.
-    </p>
-
-    <p>
-      Como creador de contenido, <strong
-        >cuento con el canal de habla hispana más visto del mundo en la
-        categoría de <em class="italic">Software & Game Development</em> en Twitch</strong
-      >. Mi objetivo es mejorar la empleabilidad de la comunidad hispana y el
-      acceso a contenido de calidad.
-    </p>
-  </div>
-
-  <img width="200" height="200" src="/me.png" alt={personalImageAlt} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 " style="object-position: 50% 50%">
-
-</article>
-
+  <article class="flex flex-col items-center justify-center gap-8 text-gray-300 bg-gray-800 p-6 rounded-lg shadow-md md:flex-row w-full max-w-4xl">
+    <div class="[&>p]:mb-4 [&>p>strong]:text-green-400 dark:[&>p>strong]:text-green-300 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
+      <h2 class="text-3xl font-bold mb-4">About This Blog</h2>
+      <p>
+        Welcome to my blog! I'm <strong> Alejandro Mejia</strong>, a passionate <strong>Cybersecurity and Go Backend Developer</strong> with over 5 years of experience in building secure and scalable web applications. From the very beginning, my love for technology has driven me to explore and master various aspects of <strong>security</strong> and <strong>software development</strong>.
+      </p>
+      
+      <p>
+        In this blog, I will be sharing my personal journey in the fields of cybersecurity and backend development, particularly focusing on **Go**, **Python**, and **Bash**. Whether you're a beginner or an experienced developer, you'll find a variety of tutorials, insights, and best practices on how to create robust tools that can help secure systems and enhance development workflows.
+      </p>
+      
+      <p>
+        I'll dive deep into the process of developing custom security tools, automating tasks with **Bash scripting**, and building cloud-native applications using **Go**. You'll also find <strong>step-by-step guides</strong> on how to conduct **vulnerability assessments**, perform **penetration testing**, and secure cloud infrastructures. This blog isn't just technical; I'll share personal stories, development tips, curiosities, and even some tricks to help you streamline your coding process.
+      </p>
+  
+      <p>
+        Additionally, you can expect regular content updates featuring new trends in cybersecurity, recommendations on best practices for protecting your digital environments, and tips on improving the security of your web applications. I aim to foster a community of like-minded individuals passionate about making the web a safer place while pushing the boundaries of **backend development**.
+      </p>
+      
+      <p>
+        If you're interested in live discussions, I also host regular sessions on **Twitch**, where I go deeper into topics such as cybersecurity, backend development in **Go**, and the use of **Python** for automating tasks and enhancing security protocols. Whether you're looking to level up your programming skills or want to learn more about protecting applications from evolving digital threats, this blog is your go-to resource!
+      </p>
+    </div>
+    
+    <img width="100" height="100" src="/Images/profilePic.jpeg" alt="Alejandro Mejia" class="order-1 object-cover w-64 h-80 p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 rounded-2xl bg-black/30 ring-1 ring-green-500/70" style="object-position: 50% 50%">
+  </article>
+  
+  
+</SectionContainer>
 <!-- FRASES PROHIBIDAS EN VUESTRO PORTFOLIO
 
 <p>

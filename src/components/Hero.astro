@@ -1,48 +1,56 @@
 ---
-const personalImageAlt = "Miguel Ángel"
-import Badge from "@/components/Badge.astro"
+const personalImageAlt = "Alejandro Mejia"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import MailIcon from "@/components/icons/Mail.astro"
 import SocialPill from "@/components/SocialPill.astro"
 ---
+<div class="max-w-4xl mx-auto border-l-2 border-r-2 border-green-500 dark:border-gray-60 px-4 border-opacity-10 w-full">
+  <div class="flex flex-col md:flex-row items-start md:items-center gap-6 mb-2">
+    <div class="flex-1">
+      <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl dark:text-white">
+        Hey, I'm Alejandro Mejia
+      </h1>
+      
+      <p class="mt-6 text-lg text-gray-700 dark:text-gray-300">
+        With over 5 years of experience in the field, I am a 
+        <strong class="text-green-700 dark:text-green-500 font-semibold">Cybersecurity and Go Backend Developer</strong> 
+        based in Quintana Roo, Mexico 🇲🇽. I specialize in building secure, high-performance web applications and distributed systems, 
+        ensuring they are resilient and scalable to meet modern demands. My passion lies in applying rigorous security practices, 
+        including <strong class="text-green-700 dark:text-green-500 font-semibold">vulnerability assessments</strong> 
+        and <strong class="text-green-700 dark:text-green-500 font-semibold">penetration testing</strong>, 
+        to safeguard applications from evolving threats.
+      </p>
+  
+      <p class="mt-4 text-lg text-gray-700 dark:text-gray-300">
+        Throughout my career, I've worked extensively with 
+        <strong class="text-green-700 dark:text-green-500 font-semibold">Golang</strong>, 
+        <strong class="text-green-700 dark:text-green-500 font-semibold">AWS</strong>, 
+        <strong class="text-green-700 dark:text-green-500 font-semibold">Docker</strong>, 
+        and <strong class="text-green-700 dark:text-green-500 font-semibold">PostgreSQL</strong>, 
+        driving the implementation of cloud-native architectures that prioritize security and efficiency. 
+        I’m dedicated to staying at the forefront of technology, constantly improving my skill set, and delivering solutions 
+        that not only meet but exceed user expectations.
+      </p>
 
-<div class="max-w-xl">
-  <div class="flex gap-4 mb-4">
-    <img
-      class="rounded-full shadow-lg size-16"
-      src="/midudev.webp"
-      alt={personalImageAlt}
-    />
-    <a
-      href="https://linkedin.com/in/midudev"
-      target="_blank"
-      rel="noopener"
-      class="flex items-center transition md:justify-center md:hover:scale-105"
-    >
-      <Badge>Disponible para trabajar</Badge>
-    </a>
+      <nav class="flex flex-wrap gap-4 mt-8">
+        <SocialPill href="mailto:a.mejiabjs@gmail.com">
+          <MailIcon class="w-4 h-4" />
+          Contact Me
+        </SocialPill>
+        <SocialPill href="https://www.linkedin.com/in/jes%C3%BAs-alejandro-mej%C3%ADa-bojorjes-9ba347239">
+          <LinkedInIcon class="w-4 h-4" />
+          LinkedIn
+        </SocialPill>
+      </nav>
+    </div>
+    
+    <!-- Image on the right, adjustable size -->
+    <div class="w-auto h-auto">
+      <img
+        class="w-150 h-150 md:w-64 md:h-65 rounded-full shadow-lg object-cover"
+        src="/Images/profilePic.jpeg"
+        alt={personalImageAlt}
+      />
+    </div>
   </div>
-  <h1
-    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
-  >
-    Hey, soy midudev
-  </h1>
-  <p
-    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
-  >
-    +15 años de experiencia. <strong
-      >Ingeniero de Software y Creador de Contenido sobre Programación</strong
-    > de Barcelona, España 🇪🇸. Especializado en el desarrollo de aplicaciones web
-    únicas.
-  </p>
-  <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill href="mailto:miduga@gmail.com">
-      <MailIcon class="size-4" />
-      Contáctame
-    </SocialPill>
-    <SocialPill href="https://linkedin.com/in/midudev">
-      <LinkedInIcon class="size-4" />
-      LinkedIn
-    </SocialPill>
-  </nav>
 </div>
