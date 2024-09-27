@@ -32,6 +32,9 @@ importers:
       typescript:
         specifier: 5.3.3
         version: 5.3.3
+      vite:
+        specifier: ^5.4.8
+        version: 5.4.8
 
 packages:
 
