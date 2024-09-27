@@ -4,8 +4,9 @@ import tailwind from "@astrojs/tailwind"
 import robotsTxt from "astro-robots-txt"
 
 // https://astro.build/config
+import vercel from '@astrojs/vercel/serverless';
+
 export default defineConfig({
-  integrations: [tailwind(), robotsTxt()],
-  site: 'https://AlejandroMBJS.github.io',
-  base: 'Portfolio'
-})
+  output: 'server',
+  adapter: vercel(),
+});)
