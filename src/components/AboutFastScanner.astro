@@ -1,5 +1,7 @@
 ---
 import SectionContainer from "./SectionContainer.astro"
+import SocialPill from "@/components/SocialPill.astro"
+
 
 ---
 <SectionContainer>
@@ -16,7 +18,7 @@ import SectionContainer from "./SectionContainer.astro"
   <article class="flex flex-col items-center justify-center gap-8 text-gray-300 bg-gray-900 p-8 rounded-lg shadow-xl md:flex-row w-full max-w-4xl transition-transform duration-300 hover:shadow-2xl">
     <div class="order-2 md:order-1">
       <p class="mb-4">
-        Welcome to the fast lane! In the high-stakes world of Capture The Flag (CTF) competitions, every second matters. That's why my Fast Port Scanner is your secret weapon, designed for those of us running on limited resources and inspired by the scanning techniques used by Marcelo Vazquez A.K.A S4VITAR.
+        Welcome to the fast lane! In the high-stakes world of Capture The Flag (CTF) competitions, every second matters. That's why my **GoScan** is your secret weapon, designed for those of us running on limited resources and inspired by the scanning techniques used by Marcelo Vazquez A.K.A S4VITAR.
       </p>
       
       <p class="mb-4">
@@ -24,11 +26,11 @@ import SectionContainer from "./SectionContainer.astro"
       </p>
       
       <p class="mb-4">
-        Imagine scanning entire networks at lightning speed! ⚡ My script enables you to conduct high-speed scans without lag, so you can focus on what really matters: finding vulnerabilities and securing points. Whether you're on an entry-level machine or a more powerful setup, this tool is engineered for performance.
+        Imagine scanning entire networks at lightning speed! ⚡ **GoScan** enables you to conduct high-speed scans without lag, so you can focus on what really matters: finding vulnerabilities and securing points. Whether you're on an entry-level machine or a more powerful setup, this tool is engineered for performance.
       </p>
       
       <p class="mb-4">
-        🚀 With a simple command-line interface, you can initiate scans effortlessly. Customize your scan parameters with ease and gain the flexibility to adapt to every CTF challenge .
+        🚀 With a simple command-line interface, you can initiate scans effortlessly. Customize your scan parameters with ease and gain the flexibility to adapt to every CTF challenge.
       </p>
   
       <p class="mb-4">
@@ -36,16 +38,21 @@ import SectionContainer from "./SectionContainer.astro"
       </p>
       
       <p class="mb-4">
-        Plus, I’ve built in extensive logging features so you can analyze your scans post-competition. Learn from each CTF and fine-tune your strategies for the next challenge. The faster you scan, the quicker you can adapt and conquer! 🏆
+        Plus, I’ve built in extensive logging features so you can analyze your scans post-competition. The output now includes a handy Nmap command for further exploration of the found ports, enhancing your analysis capabilities. The faster you scan, the quicker you can adapt and conquer! 🏆
       </p>
   
       <p class="mb-4">
         So why wait? Let’s push the boundaries of what’s possible in cybersecurity together! Your feedback is invaluable, and I’m always excited to hear how we can enhance this tool. Join me on this journey to make the web a safer place, one fast scan at a time! 🔍
       </p>
+      <SocialPill href="https://github.com/AlejandroMBJS/GoScanCLI/blob/main/README.md">
+        <p>Code</p>
+       </SocialPill>
     </div>
     
     <img width="100" height="100" src="https://raw.githubusercontent.com/AlejandroMBJS/Fast-Port-Scanner-CLI/refs/heads/main/scancomparation.jpg" alt="Alejandro Mejia" class="order-1 object-cover w-64 h-80 p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 rounded-2xl bg-black/30 ring-1 ring-green-500/70 transition-transform duration-300 hover:scale-105" style="object-position: 50% 50%">
-</article>
+    
+  </article>
+  
 
   
   
